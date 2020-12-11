@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>spa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+    <header>
+        <h1>Spa</h1>
+        <h2>Amanda's Spa</h2>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="index.html">home</a><svg width="1em" height="1em" viewBox="0 0 16 16"
+                    class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                    <path fill-rule="evenodd"
+                        d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                </svg></li>
+
+            <li><a href="services.html">services</a><svg width="1em" height="1em" viewBox="0 0 16 16"
+                    class="bi bi-hand-thumbs-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16v-1c.563 0 .901-.272 1.066-.56a.865.865 0 0 0 .121-.416c0-.12-.035-.165-.04-.17l-.354-.354.353-.354c.202-.201.407-.511.505-.804.104-.312.043-.441-.005-.488l-.353-.354.353-.354c.043-.042.105-.14.154-.315.048-.167.075-.37.075-.581 0-.211-.027-.414-.075-.581-.05-.174-.111-.273-.154-.315L12.793 9l.353-.354c.353-.352.373-.713.267-1.02-.122-.35-.396-.593-.571-.652-.653-.217-1.447-.224-2.11-.164a8.907 8.907 0 0 0-1.094.171l-.014.003-.003.001a.5.5 0 0 1-.595-.643 8.34 8.34 0 0 0 .145-4.726c-.03-.111-.128-.215-.288-.255l-.262-.065c-.306-.077-.642.156-.667.518-.075 1.082-.239 2.15-.482 2.85-.174.502-.603 1.268-1.238 1.977-.637.712-1.519 1.41-2.614 1.708-.394.108-.62.396-.62.65v4.002c0 .26.22.515.553.55 1.293.137 1.936.53 2.491.868l.04.025c.27.164.495.296.776.393.277.095.63.163 1.14.163h3.5v1H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+                </svg></li>
+
+            <li><a href="about.html">About</a><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg></li>
+
+            <li><a href="#">appointments</a><svg width="1em" height="1em" viewBox="0 0 16 16"
+                    class="bi bi-file-earmark-image" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M12 16a2 2 0 0 0 2-2V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8zM3 2a1 1 0 0 1 1-1h5.5v2A1.5 1.5 0 0 0 11 4.5h2V10l-2.083-2.083a.5.5 0 0 0-.76.063L8 11 5.835 9.7a.5.5 0 0 0-.611.076L3 12V2z" />
+                    <path fill-rule="evenodd" d="M6.502 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                </svg></li>
+
+            <li><a href="#">contact</a><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                </svg></li>
+        </ul>
+        </nav>
+        <main>
+        <h3 class="title">services</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>spa facials</h3>
+                <img src="images/spa-facial.png" alt="spa">
+                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+                    read more
+                </button>
+            </div>
+            <div class="col-md-4">
+                <h3>peeling</h3>
+                <img src="images/chemical-peel-oval.png" alt="chemical">
+                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+                    read more
+                </button>
+            </div>
+            <div class="col-md-4">
+                <h3>waxing</h3>
+                <img src="images/waxing-oval.png" alt="waxing">
+                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+                    read more
+                </button>
+            </div>
+
+            <div class="col-md-4">
+                <h3>makeup</h3>
+                <img src="images/makeup.png" alt="makeup">
+                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+                    read more
+                </button>
+            </div>
+            <div class="col-md-4">
+                <h3>other services</h3>
+                <img src="images/other-service.png" alt="other">
+                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+                    read more
+                </button>
+            </div>
+            <div class="col-md-4">
+                <h3>manicure & pedicure</h3>
+                <img src="images/pedicure.png" alt="pedicure">
+                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+                    read more
+                </button>
+            </div>
+        </div>
+        <p>Enter Your Mail...</p>
+
+
+    </main>
+    <footer>
+        <h3>Get In Touch</h3>
+        <p>351 N 200 W Provo, UT 84601
+
+            385-208-7782
+            (Send a text or leave a message)
+
+            amanda@amandaspaservices.com</p>
+        <h2>Amanda's Spa</h2>
+        &copy; 2015 Amanda's Spa. Design by Xtre Marketing LLC
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+</script>
+<script src="/gsap-public/minified/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+<!-- http://amandaspaservices.com/ -->
+
+</html>
